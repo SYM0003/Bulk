@@ -1,0 +1,53 @@
+{% extends 'login/base.html' %}
+
+{% block title %} reset {% endblock title %}
+
+
+{% block style %}
+<style>
+    .heading {
+        text-align: center;
+    }
+
+    .reset {
+        /* border-color: blue;
+        background-color: green; */
+        width: 30%;
+        /* padding-bottom: 20px;
+        padding-top: 20px; */
+        /* check */
+
+        margin-right: 135px;
+        height: 30%;
+        width: 50%;
+        margin-left: 135px;
+        border-top-width: 20px;
+        padding-left: 20px;
+        border-right-width: 20px;
+        padding-right: 20px;
+        height: 140px;
+        box-shadow: inset;
+
+    }
+
+    .form-control {
+        border-radius: 11px;
+        margin-bottom: 5px;
+
+    }
+</style>
+{% endblock style %}
+
+{% block body %}
+<!-- <h1 class="heading">Account Recovery</h1> -->
+<p style="text-align: center;font-size: large;margin-top: 5px;">Account recovery</p>
+<div class="reset">
+    <form action="/password/reset" method="post">
+
+        <p>confirm your registered email id</p>
+        <input class="form-control" type="email" name="email" placeholder="Email">
+        <input type="submit" class="btn btn-primary" value="Confirm">
+    </form>
+</div>
+
+{% endblock body %}
