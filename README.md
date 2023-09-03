@@ -1,6 +1,6 @@
 # Bulk
 > Bulk is Django project.
-> it can help the user the send the WhatsApp message to multiple user just by one click.
+> it can help the user to send the WhatsApp message to multiple user just by one click.
 > It is best for the bussiness who want to send messages or want to advertise their product.
 
 
